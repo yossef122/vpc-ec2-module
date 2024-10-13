@@ -6,3 +6,7 @@ output "subnet-id" {
   value = aws_subnet.subnet-final-project.id
 }
 
+output "private-subnet-id" {
+  value = aws_subnet.subnet-private-final-project.id
+}
+
