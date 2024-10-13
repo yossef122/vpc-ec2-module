@@ -13,9 +13,18 @@ variable "subnet_cidr" {
   type = string
 }
 
+variable "subnet_private_cidr" {
+  default = "10.0.2.0/24"
+  type = string
+}
 
 variable "subnet_avb" {
   default = "us-east-1a"
+  type = string
+}
+
+variable "subnet_private_name" {
+  default = "private-subnet-final-project-2"
   type = string
 }
 
@@ -26,6 +35,10 @@ variable "subnet_name" {
 
 variable "route_name" {
   default = "route-final-project-2"
+  type = string
+}
+variable "route_private_name" {
+  default = "private-route-final-project-2"
   type = string
 }
 
